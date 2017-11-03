@@ -1,0 +1,45 @@
+/* index custom styles */
+
+html,
+body 
+{
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+	margin-top: 10px;
+}
+
+.page-contents {
+    margin-top: 10px;
+}
+
+#overview .row {
+	min-height: 0px;
+}
+
+.well {
+	max-width: 50%;
+	max-height: 50%;
+}
+
+.well h3 {
+	font-family: 'Inconsolata', monospace;
+	padding: 0px;
+	margin: 0px;
+}
+
+#portrait {
+	max-width: 50%;
+	max-height: 50%;
+	border: 2px solid black;
+	border-radius: 20%;
+}
+
+.section-title {
+	text-align: center; 
+	text-decoration: underline;
+	margin-top: 0px;
+	font-size: 30px;
+}
