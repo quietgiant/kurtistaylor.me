@@ -10,17 +10,13 @@
     <title>Kurtis Taylor, Engineer</title>
 
 	<!-- bootstrap core css -->
-	<link rel="stylesheet" href="https://bootswatch.com/2/simplex/bootstrap.min.css" type="text/css">
-	<!-- bootstrap responsive css -->
-	<link rel="stylesheet" href="https://bootswatch.com/2/default/bootstrap-responsive.min.css" type="text/css">
-	<!-- font awesome css -->
-	<link rel="stylesheet" href="https://bootswatch.com/2/css/font-awesome.min.css" type="text/css">
-	<!-- bootswatch css -->
-	<link rel="stylesheet" href="https://bootswatch.com/2/css/bootswatch.css" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css" rel="stylesheet">
+	<!-- animate on scroll css -->
+	<link rel="stylesheet" href="/bower_components/aos/dist/aos.css" />
 	<!-- animate css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<!-- inconsolata font css -->
-	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<!-- google font css -->
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat" rel="stylesheet">
 	<!-- custom css -->
 	<link rel="stylesheet" href="/res/css/index.css" type="text/css">
 
@@ -29,32 +25,29 @@
 <body>
 
 	<!-- page contents -->
-	<div class="container-fluid page-contents">
+	<div class="container-fluid page-contents" id="page">
 
-		<!-- heading -->
-		<header class="jumbotron" id="overview">
-			<div class="container-fluid">
-				<h1 style="margin-bottom: 0px;">Kurtis Taylor</h1>
-				<p class="lead">Software engineer</p>
-				<hr>
-			</div>
-		</header>
+		<div class="container-fluid animated tada title-bar">
+			<h2>Kurtis Taylor<p>, software engineer</p></h2>
+		</div>
+		<div class="animated fadeIn">
+			<hr style="border-color: #134fb8">
+		</div>
+
 
 		<!-- navigator and picture -->
-		<div class="container">
+		<div class="container intro">
 	  		<div class="row">
 
-			    <div class="col-sm-6">
-			    	<div class="well">
-				        <h3>$ echo(nav)</h3>
-				        <h3>&gt; <a href="#about">about</a></h3>
-				        <h3>&gt; <a href="#projects">projects</a></h3>
-				        <h3>&gt; <a href="#links">links</a></h3>
-				        <h3>&gt; <a href="#contact">contact</a></h3>
-				    </div>
+			    <div class="col-xs-6 well animated rotateInUpLeft">
+			        <h3>$ echo(nav)</h3>
+			        <h3>&gt; <a href="#about">about</a></h3>
+			        <h3>&gt; <a href="#projects">projects</a></h3>
+			        <h3>&gt; <a href="#links">links</a></h3>
+			        <h3>&gt; <a href="#contact">contact</a></h3>
 			    </div>
 
-			    <div class="col-sm-6">
+			    <div class="col-xs-6 animated rotateInUpRight">
 	    			<img src="/res/img/botanical.jpg" id="portrait">
 				</div>
 
@@ -62,7 +55,7 @@
 		</div>
 
 		<!-- about section -->
-		<div class="container-fluid" id="about">
+		<div class="container-fluid" id="about" data-aos="fade-right">
 			<h3 class="section-title">
 				about me
 			</h3>
@@ -95,7 +88,7 @@
 		</div>
 
 		<!-- projects section -->
-		<div class="container-fluid" id="projects">
+		<div class="container-fluid" id="projects" data-aos="fade-left">
 			<h3 class="section-title">
 				some projects i work[ed] on
 			</h3>
@@ -104,7 +97,7 @@
 		</div>
 
 		<!-- links section -->
-		<div class="container-fluid" id="links">
+		<div class="container-fluid" id="links" data-aos="fade-right">
 			<h3 class="section-title">
 				check out my portfolios
 			</h3>
@@ -117,7 +110,7 @@
 		</div>
 
 		<!-- contact section -->
-		<div class="container-fluid" id="contact">
+		<div class="container-fluid" id="contact" data-aos="fade-left">
 			<h3 class="section-title">
 				contact me
 			</h3>
@@ -128,8 +121,35 @@
     </div>
 
     <footer>
-		<p style="text-align: center;"><a href="#top">Back to top</a></p>
+		<p style="text-align: center;"><a href="#page">Back to top</a></p>
 	</footer>
+
+	<!-- jquery js -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- bootstrap core js -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- animate on scroll js -->
+	<script src="bower_components/aos/dist/aos.js"></script>
+	<!-- smooth jump to anchor tag animation -->
+	<script>
+	$(document).ready(function(){
+		$('a[href^="#"]').on('click',function (e) {
+		    e.preventDefault();
+
+		    var target = this.hash;
+		    var $target = $(target);
+
+		    $('html, body').stop().animate({
+		        'scrollTop': $target.offset().top
+		    }, 900, 'swing', function () {
+		        window.location.hash = target;
+		    });
+		});
+	});
+	</script>
+	<script>
+		AOS.init();
+	</script>
     
 </body>
 </html>
