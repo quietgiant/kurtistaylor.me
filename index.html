@@ -57,7 +57,7 @@
 				<div class="col-sm-6 nav">
 					<a href="/about.html">about</a>
 					<a href="/projects.html">projects</a>
-					<a href="/contact.html">contact</a>
+					<a href="/books.html">books</a>
 				</div>
 				<div class="col-sm-3"></div>
 			</div>
@@ -73,7 +73,7 @@
 			<div class="container-fluid links">
 				<a href="https://github.com/quietgiant/" target="_blank"><button type="button" class="btn btn-success">Github</button></a>
 				<a href="https://www.linkedin.com/in/kurtis-j-taylor/" target="_blank"><button type="button" class="btn btn-info">LinkedIn</button></a>
-				<a href="/res/resume.pdf" download><button type="button" class="btn btn-warning">Resume</button></a>
+				<a><button type="button" class="btn btn-warning" onclick="show_resume()">Resume</button></a>
 			</div>
 
 		</div><br>
@@ -107,10 +107,17 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<!-- bootstrap core js -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- pdfobject js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.0.201604172/pdfobject.min.js"></script>
 	<!-- animate on scroll js -->
 	<script src="bower_components/aos/dist/aos.js"></script>
 	<script>
 		AOS.init();
+	</script>
+	<script>
+		function show_resume() {
+			PDFObject.embed("/res/resume.pdf");
+		}
 	</script>
     
 </body>
