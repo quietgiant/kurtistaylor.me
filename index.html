@@ -27,64 +27,17 @@
 	<!-- page contents -->
 	<div class="container-fluid page-contents" id="page">
 
-		<div class="container-fluid title-bar">
-			<div class="row">
-				<a href="/index.html">
-				    <div class="col-sm-5 animated fadeIn" style="animation-duration: 2s" id="left">
-						<h1>kurtis </h1>
-						<h1>taylor</h1>
-					</div>
-				</a>
-				<div class="col-sm-2 animated fadeIn">
-					<a href="/index.html">
-						<img src="/res/img/me.jpg" alt="kurt" id="portrait">
-					</a>
-				</div>
-				<a href="/index.html">
-					<div class="col-sm-5 animated fadeIn" style="animation-duration: 2s" id="right">
-						<h1>software</h1> 
-						<h1>engineer</h1>
-					</div>
-				</a>
-			</div>
+		<div class="container-fluid" id="top-header">
+			<!-- header.html is loaded here via jquery -->
 		</div>
-
-		<br>
-
-		<div class="container-fluid">
-			<div class="row">
-			    <div class="col-sm-3"></div>
-				<div class="col-sm-6 nav">
-					<a href="/about.html">about</a>
-					<a href="/projects.html">projects</a>
-					<a href="/books.html">books</a>
-				</div>
-				<div class="col-sm-3"></div>
-			</div>
-		</div>
-
-		<div class="animated fadeIn">
-			<hr style="border-color: #134fb8">
-		</div>
-
-		<!-- links section -->
-		<div class="container-fluid" id="links" data-aos="fade-left" data-aos-anchor="#bio" data-aos-once="true">
-			
-			<div class="container-fluid links">
-				<a href="https://github.com/quietgiant/" target="_blank"><button type="button" class="btn btn-success">Github</button></a>
-				<a href="https://www.linkedin.com/in/kurtis-j-taylor/" target="_blank"><button type="button" class="btn btn-info">LinkedIn</button></a>
-				<a><button type="button" class="btn btn-warning" onclick="show_resume()">Resume</button></a>
-			</div>
-
-		</div><br>
 
 		<!-- bio section -->
-		<div class="container-fluid" id="bio" data-aos="fade-right" data-aos-once="true">
+		<div class="container-fluid" id="bio" data-aos="fade-left" data-aos-once="true">
 			<h3 class="section-title">
 				quick bio
 			</h3>
 
-			<p>Hey there! I'm Kurtis Taylor, a student/software engineer working out of Fort Wayne, IN. I am currently studying at <a href="https://www.ipfw.edu/" target="_blank">Purdue University Fort Wayne</a> working on a BS/MS in applied computer science.</p><br>
+			<p>Hey there! I'm Kurtis Taylor, a student/software engineer in Fort Wayne, IN. I am currently studying at <a href="https://www.ipfw.edu/" target="_blank">Purdue University Fort Wayne</a> working on a BS/MS in applied computer science.</p><br>
 
 			<p>I am currently a Software Engineer intern at <a href="http://www.thumbtravel.co" target="_blank">Thumb</a>. There, my work deals with every corner of our tech stack, front-end to back-end. We are building an auto-matching ride sharing platform from the ground up.</p><br>
 
@@ -92,32 +45,35 @@
 
 			<p><a href="mailto:hi@kurtistaylor.me?subject=Hello from the World Wide Web!">Give me a shout.</a></p>
 
-		</div><br>
+			<br>
+			<!-- quote section -->
+			<blockquote>
+	  			<p>Talk is cheap. Show me the code.</p>
+	 			<footer><cite title="Source Title">Linus Torvalds</cite></footer>
+			</blockquote>
+			
+		</div>
 
-		<!-- quote section -->
-		<blockquote>
-  			<p>Talk is cheap. Show me the code.</p>
- 		<footer><cite title="Source Title">Linus Torvalds</cite></footer>
-		</blockquote>
+		
 
 
     </div>
 
+
 	<!-- jquery js -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- import header -->
+	<script>
+	$(function(){
+		$("#top-header").load("header.html");
+	});
+	</script>
 	<!-- bootstrap core js -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!-- pdfobject js -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.0.201604172/pdfobject.min.js"></script>
 	<!-- animate on scroll js -->
 	<script src="bower_components/aos/dist/aos.js"></script>
 	<script>
 		AOS.init();
-	</script>
-	<script>
-		function show_resume() {
-			PDFObject.embed("/res/resume.pdf");
-		}
 	</script>
     
 </body>

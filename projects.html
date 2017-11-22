@@ -27,50 +27,19 @@
 	<!-- page contents -->
 	<div class="container-fluid page-contents" id="page">
 
-		<div class="container-fluid title-bar">
-			<div class="row">
-			    <div class="col-sm-5" id="left">
-					<h1>kurtis </h1>
-					<h1>taylor</h1>
-				</div>
-				<div class="col-sm-2 animated fadeIn">
-					<a href="/index.html"><img src="/res/img/me.jpg" id="portrait"></a>
-				</div>
-				<div class="col-sm-5" id="right">
-					<h1>software</h1> 
-					<h1>engineer</h1>
-				</div>
-			</div>
-		</div>
-
-		<br>
-
-		<div class="container-fluid">
-			<div class="row">
-			    <div class="col-sm-3"></div>
-				<div class="col-sm-6 nav">
-					<a href="/about.html">about</a>
-					<a href="/projects.html">projects</a>
-					<a href="/books.html">books</a>
-				</div>
-				<div class="col-sm-3"></div>
-			</div>
-		</div>
-
-		<div class="animated fadeIn">
-			<hr style="border-color: #134fb8">
+		<div class="container-fluid" id="top-header">
+			<!-- header.html is loaded here via jquery -->
 		</div>
 
 		<!-- projects section -->
-		<div class="container-fluid" id="projects" data-aos="fade-left">
+		<div class="container-fluid" id="projects" data-aos="fade-left" data-aos-once="true">
 			<h3 class="section-title">
 				projects i work[ed] on
 			</h3>
 			<br>
-			<br>
 			<ul>
-				<li><a href="www.thumbtravel.co">Thumb</a></li>
-				<li><a href="www.beerbuddy.x10host.com">BeerBuddy</a></li>
+				<li><a href="https://www.thumbtravel.co" target="_blank">Thumb</a></li>
+				<li><a href="http://www.beerbuddy.x10host.com" target="_blank">BeerBuddy</a></li>
 			</ul>
 
 		</div>
@@ -79,6 +48,12 @@
 
 	<!-- jquery js -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- import header -->
+	<script>
+	$(function(){
+		$("#top-header").load("header.html");
+	});
+	</script>
 	<!-- bootstrap core js -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<!-- animate on scroll js -->

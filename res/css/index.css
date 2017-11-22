@@ -11,6 +11,7 @@ body {
 .page-contents {
 	margin-top: 20px;
 	margin-bottom: 30px;
+	animation-duration: 2s
 }
 
 .title-bar {
@@ -24,11 +25,11 @@ body {
 	color: #4582ec;
 }
 
-.title-bar #left {
+#left {
 	text-align: left;
 }
 
-.title-bar #right {
+#right {
 	text-align: right;
 }
 
