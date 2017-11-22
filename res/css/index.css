@@ -43,10 +43,6 @@ body {
 	font-size: 20px;
 }
 
-#bio p {
-	line-height: 160%;
-}
-
 .section-title {
 	text-align: center;
 	text-decoration: underline;
@@ -68,9 +64,30 @@ body {
 	filter: grayscale(0%);
 }
 
-#bio {
-	padding-left: 20%;
-	padding-right: 20%;
+#bio, #about {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* for mobile */
+    #bio, #about {
+    	padding-left: 20%;
+    	padding-right: 20%;
+    }
+}
+
+#bio p {
+	line-height: 160%;
+}
+
+#about p {
+	line-height: 160%;
+	text-indent: 50px;
+}
+
+#about .well p {
+	text-indent: 0px;
 }
 
 .links {
