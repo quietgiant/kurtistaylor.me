@@ -65,14 +65,14 @@ body {
 	filter: grayscale(0%);
 }
 
-#bio, #about {
+#bio, #about, #projects {
 	padding-left: 5%;
 	padding-right: 5%;
 }
 
 @media only screen and (min-width: 768px) {
     /* for mobile */
-    #bio, #about {
+    #bio, #about, #projects {
     	padding-left: 20%;
     	padding-right: 20%;
     }
