@@ -1,2 +1,7 @@
 DirectoryIndex /index.html
 ErrorDocument 404 /404.html
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^kurtistaylor\.me$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.kurtistaylor\.me$
+RewriteRule ^(.*)$ https://www.kurtistaylor.me/$1 [R,L]
