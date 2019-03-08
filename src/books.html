@@ -2,43 +2,26 @@
 <html lang="en">
 
 <head>
-
 	<link rel="page icon" href="res/img/icon.ico" />
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <title>Kurtis Taylor, Books</title>
-
-	<!-- bootstrap core css -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css" rel="stylesheet">
-	<!-- animate on scroll css -->
 	<link rel="stylesheet" href="/bower_components/aos/dist/aos.css" />
-	<!-- animate css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<!-- google font css -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat" rel="stylesheet">
-	<!-- custom css -->
-	<link rel="stylesheet" type="text/css" href="/res/css/index.css">
+	<link rel="stylesheet" type="text/css" href="/res/css/global.css">
 	<link rel="stylesheet" type="text/css" href="/res/css/books.css">
-
 </head>
 
 <body>
 
-	<!-- page contents -->
 	<div class="container-fluid page-contents" id="page">
-
-		<div class="container-fluid" id="top-header">
-			<!-- header.html is loaded here via jquery -->
-		</div>
-
-		<!-- books section -->
+		<div class="container-fluid" id="top-header"></div>
 		<div class="container-fluid" id="books" data-aos="fade-right" data-aos-once="true">
 			<h3 class="section-title">
 				what i'm reading
 			</h3>
-
-			<!-- books table -->
 			<div class="table-responsive">
 				<table class="table" width="80%" align="center">
 					<tr>
@@ -63,24 +46,14 @@
 					</tr>
 				</table>
 			</div>
-
 		</div>
-
     </div>
 
-	<!-- jquery js -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<!-- import header -->
-	<script>
-	$(function(){
-		$("#top-header").load("header.html");
-	});
-	</script>
-	<!-- bootstrap core js -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!-- animate on scroll js -->
 	<script src="bower_components/aos/dist/aos.js"></script>
 	<script>
+		$("#top-header").load("header.html");
 		AOS.init();
 	</script>
     

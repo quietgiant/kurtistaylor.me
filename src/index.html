@@ -2,77 +2,42 @@
 <html lang="en">
 
 <head>
-
 	<link rel="page icon" href="res/img/icon.ico" />
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <title>Kurtis Taylor, Engineer</title>
-
-	<!-- bootstrap core css -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css" rel="stylesheet">
-	<!-- animate on scroll css -->
 	<link rel="stylesheet" href="/bower_components/aos/dist/aos.css" />
-	<!-- animate css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<!-- google font css -->
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat" rel="stylesheet">
-	<!-- custom css -->
-	<link rel="stylesheet" href="/res/css/index.css" type="text/css">
-
+	<link rel="stylesheet" href="/res/css/global.css" type="text/css">
 </head>
 
 <body>
 
-	<!-- page contents -->
 	<div class="container-fluid page-contents" id="page">
-
-		<div class="container-fluid" id="top-header">
-			<!-- header.html is loaded here via jquery -->
-		</div>
-
-		<!-- bio section -->
+		<div class="container-fluid" id="top-header"></div>
 		<div class="container-fluid" id="bio" data-aos="fade-left" data-aos-once="true">
 			<h3 class="section-title">
 				quick bio
 			</h3>
-
-			<p>Hey there! I'm Kurtis Taylor, a student/software engineer in Fort Wayne, IN. I am studying at <a href="https://www.pfw.edu/" target="_blank">Purdue University Fort Wayne</a> working on a BS/MS in Applied Computer Science.</p><br>
-
-			<p>I am currently a Software Engineer at <a href="https://www.apterainc.com/" target="_blank">Aptera Software</a>. In my spare time, I also work on <a href="https://drinklink.app/" target="_blank">DrinkLink</a>, a platform to share local beer, wine, and liquor prices.</p><br>
-
+			<p>Hey there! I'm Kurtis Taylor, a student/software engineer in Fort Wayne, IN. I am studying at <a href="https://www.pfw.edu/" target="_blank">Purdue University Fort Wayne</a> working on a BS/MS in Applied Computer Science. I am currently a Software Engineer at <a href="https://www.apterainc.com/" target="_blank">Aptera Software</a>. In my spare time, I also work on <a href="https://drinklink.app/" target="_blank">DrinkLink</a>, a platform to share local beer, wine, and liquor prices.</p><br>
+			<i class="tagline">Here's the tagline</i><br><br>
 			<p>I believe technology is here to enhance our world. I am aspiring to help build and develop new technologies that improve the way the world benefits from computers.</p><br>
-
 			<p><a href="mailto:hi@kurtistaylor.me?subject=Hello from the World Wide Web!">Give me a shout!</a></p>
-
 			<br>
-			<!-- quote section -->
 			<blockquote>
 	  			<p>Talk is cheap. Show me the code.</p>
 	 			<footer><cite title="Source Title">Linus Torvalds</cite></footer>
 			</blockquote>
-			
 		</div>
-
-		
-
-
     </div>
 
-
-	<!-- jquery js -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<!-- import header -->
-	<script>
-	$(function(){
-		$("#top-header").load("header.html");
-	});
-	</script>
-	<!-- bootstrap core js -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!-- animate on scroll js -->
 	<script src="bower_components/aos/dist/aos.js"></script>
 	<script>
+		$("#top-header").load("header.html");
 		AOS.init();
 	</script>
     

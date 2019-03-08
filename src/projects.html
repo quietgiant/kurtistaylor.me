@@ -2,86 +2,59 @@
 <html lang="en">
 
 <head>
-
 	<link rel="page icon" href="res/img/icon.ico" />
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>Kurtis Taylor, Projects</title>
-
-	<!-- bootstrap core css -->
+	<title>Kurtis Taylor, Projects</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css" rel="stylesheet">
-	<!-- animate on scroll css -->
 	<link rel="stylesheet" href="/bower_components/aos/dist/aos.css" />
-	<!-- animate css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<!-- google font css -->
 	<link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat" rel="stylesheet">
-	<!-- custom css -->
-	<link rel="stylesheet" href="/res/css/index.css" type="text/css">
-
+	<link rel="stylesheet" href="/res/css/global.css" type="text/css">
 </head>
 
 <body>
 
-	<!-- page contents -->
 	<div class="container-fluid page-contents" id="page">
-
-		<div class="container-fluid" id="top-header">
-			<!-- header.html is loaded here via jquery -->
-		</div>
-
-		<!-- projects section -->
+		<div class="container-fluid" id="top-header"></div>
 		<div class="container-fluid" id="projects" data-aos="fade-left" data-aos-once="true">
 			<h3 class="section-title">
 				projects i work[ed] on
 			</h3>
 			<br>
-			
 			<div class="container-fluid" data-aos="fade-right" data-aos-once="true">
-
-				<h2><a href="https://drinklink.app/" target="_blank">DrinkLink<h5> (in development)</h5></a></h2>
-				<p>A modern mobile application that enables users to share beer, wine, and liquor prices after visiting local liquor stores. Semester project for a Software Project Management course.</p>
 				
-				<h2><a href="https://www.beerbuddy.fun" target="_blank">BeerBuddy</a></h2>
+				<h2>
+					<a href="https://drinklink.app/" target="_blank">DrinkLink<h5> (in development)</h5></a>
+				</h2>
+				<p>A modern mobile application that enables users to share beer, wine, and liquor prices after visiting local liquor stores. Semester project for a Software Project Management course.</p>
+				<h2>
+					<a href="https://www.beerbuddy.fun" target="_blank">BeerBuddy</a>
+				</h2>
 				<p>The original version of DrinkLink, but implemented as a web-app. Also, a semester project for a Web Application Development course.</p>
-
-				<h2><a href="/res/docs/modeling_influence_spread.pdf" target="_blank">Modeling the Spread of Influence in Social Networks</a></h2>
-				<p>A research project I assisted <a href="http://users.ipfw.edu/chenz/"
-          target="_blank">Dr. Zesheng Chen</a> with during Spring 2016, which
-        explores traditional methods to model the spread of influence in social
-        networks and proposes a new, more accurate model. Our findings can help
-        computer scientists in designing new network protocols, structures, and
-        policies to facilitate the spread of information through social
-        networks. This paper was published in the <a
-        href="https://ieeexplore.ieee.org/document/7979809"
-        target="_blank">2017 IEEE 37th International Conference on Distributed Computing Systems Workshops</a>.</p>
-
-				<h2><a href="https://app.trystructure.com" target="_blank">Structure</a></h2>
+				<h2>
+					<a href="/res/docs/modeling_influence_spread.pdf" target="_blank">Modeling the Spread of Influence in Social Networks</a>
+				</h2>
+				<p>A research project I assisted <a href="http://users.ipfw.edu/chenz/" target="_blank">Dr. Zesheng Chen</a> with during Spring 2016, which explores traditional methods to model the spread of influence in social networks and proposes a new, more accurate model. Our findings can help computer scientists in designing new network protocols, structures, and policies to facilitate the spread of information through social networks. This paper was published in the <a href="https://ieeexplore.ieee.org/document/7979809" target="_blank">2017 IEEE 37th International Conference on Distributed Computing Systems Workshops</a>.</p>
+				<h2>
+					<a href="https://app.trystructure.com" target="_blank">Structure</a>
+				</h2>
 				<p>A homegrown time-tracking and project management system developed by Aptera Software.</p>	
 
-				<h2><a href="https://www.thumbtravel.co" target="_blank">Thumb</a></h2>
+				<h2>
+					<a href="https://www.thumbtravel.co" target="_blank">Thumb</a>
+				</h2>
 				<p>The first auto-matching, long-distance rideshare platform exclusively designed for college students.</p>
 
 			</div>
-			
 		</div>
-
     </div>
 
-	<!-- jquery js -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<!-- import header -->
-	<script>
-	$(function(){
-		$("#top-header").load("header.html");
-	});
-	</script>
-	<!-- bootstrap core js -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!-- animate on scroll js -->
 	<script src="bower_components/aos/dist/aos.js"></script>
 	<script>
+		$("#top-header").load("header.html");
 		AOS.init();
 	</script>
     
