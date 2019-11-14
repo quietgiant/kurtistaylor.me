@@ -3,3 +3,4 @@ test.*
 node_modules
 .vscode
 web.config
+deploy.sh
