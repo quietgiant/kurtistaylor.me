@@ -25,7 +25,7 @@
 				<h4>3 Important Things</h4>
 				<p>1. A trade is measured by how it's managed, not by its P/L.</p>
 				<p>2. Keep your account close to its highs at all times - capital preservation above all.</p>
-				<p>3. The market will do what screws the most people.</p>
+				<p>3. Let profits run, take losses quickly.</p>
 			</div>
 			<div class="">
 				<canvas id="chart">
@@ -200,21 +200,23 @@
 		var myChart = new Chart(ctx, {
 			type: 'pie',
 			data: {
-				labels: ['MSFT', 'AAPL', 'DKNG', 'LULU', 'GTBIF'],
+				labels: ['MSFT', 'AAPL', 'GTBIF', 'TCNNF', 'LULU', 'DKNG'],
 				datasets: [{
-					data: [25, 25, 20, 20, 10],
+					data: [20, 20, 18, 17, 15, 10],
 					backgroundColor: [
 						'rgba(255, 99, 132, 0.2)',
-						'rgba(54, 162, 235, 0.2)',
 						'rgba(255, 206, 86, 0.2)',
 						'rgba(75, 192, 192, 0.2)',
+						'rgba(160, 80, 80, 0.2)',
+						'rgba(54, 162, 235, 0.2)',
 						'rgba(153, 102, 255, 0.2)'
 					],
 					borderColor: [
 						'rgba(255, 99, 132, 1)',
-						'rgba(54, 162, 235, 1)',
 						'rgba(255, 206, 86, 1)',
 						'rgba(75, 192, 192, 1)',
+						'rgba(160, 80, 80, 1)',
+						'rgba(54, 162, 235, 1)',
 						'rgba(153, 102, 255, 1)'
 					]
 				}]
