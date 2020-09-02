@@ -1,0 +1,13 @@
+table tr td {
+	padding: 15px 15px 15px 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+
+table td.return.positive {
+	color: green;
+}
+
+table td.return.negative {
+	color: red;
+}
