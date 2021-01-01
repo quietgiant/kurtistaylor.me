@@ -5,9 +5,9 @@ table tr td {
 }
 
 table td.return.positive {
-	color: green;
+	color: rgba(0, 200, 5, 0.85);
 }
 
 table td.return.negative {
-	color: red;
+	color: rgba(255, 80, 0, 0.85);
 }
