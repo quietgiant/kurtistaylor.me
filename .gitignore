@@ -4,3 +4,4 @@ node_modules
 .vscode
 web.config
 deploy.sh
+annualized-return.py

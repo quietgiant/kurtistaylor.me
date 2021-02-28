@@ -11,3 +11,8 @@ table td.return.positive {
 table td.return.negative {
 	color: rgba(220, 30, 30, 0.7);
 }
+
+p.disclaimer {
+	font-style: italic;
+	font-size: 1.5rem;
+}
